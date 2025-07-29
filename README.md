@@ -1,12 +1,16 @@
-# React + Vite
+Конвертер цветов из HEX в RGB
+===
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Вам необходимо разработать конвертер цветов из HEX в RGB.
 
-Currently, two official plugins are available:
+![Конвертер цветов](./img/preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Интерфейс конвертера
 
-## Expanding the ESLint configuration
+При правильном вводе цвета он показывает его представление в формате RGB и меняет цвет фона на заданный:
+![Цвет](./img/color.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Конвертер при вводе неправильного цвета в формате HEX должен сообщать об ошибке:
+![Ошибка](./img/error.png)
+
+Необходимо дожидаться ввода всех семи символов, включая решётку, чтобы принимать решение о том, показывать ошибку или менять цвет фона.
